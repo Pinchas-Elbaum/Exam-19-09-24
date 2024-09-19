@@ -7,6 +7,79 @@
     <script defer src="script.js"></script>
 </head>
 <body>
-    
+    <h1>NBA FANTASY 2014-2024</h1>
+
+    <div id="MyFantasyTeam">
+
+        <h2> My Fantasy Team</h2>
+        <div id="pg" class="playersCard">
+            <h4 id="h4pg">Point Guard</h4>
+            
+        </div>
+        
+        <div id="sg" class="playersCard">
+            <h4 id="h4sg"> Shooting Guard</h4>
+           
+        </div>
+
+
+        <div id="sf" class="playersCard">
+            <h4 id="h4sf"> Small Forward</h4>
+            
+        </div>
+
+        <div id="pf" class="playersCard">
+            <h4 id="h4pf"> Power Forward</h4>
+           
+        </div>
+
+        <div id="c" class="playersCard">
+            <h4 id="h4c"> Center</h4>
+            
+        </div>
+
+    </div>
+
+    <h2>NBA Players Search</h2>
+    <div id="playerSearch">
+        <form id="form">
+            <select name="position" id="position">
+                <option value="pg">pg</option>
+                <option value="sg">sg</option>
+                <option value="sf">sf</option>
+                <option value="pf">pf</option>
+                <option value="c">c</option>
+              </select>
+
+            <br><br>
+
+            <label for="points"></label>
+            <input type="range" id="points" name="points" min="0" max="20000" class="range" ><br><br>
+
+            
+            <label for="fg%"></label>
+            <input type="range" id="twoPercent" name="fg%" min="0" max="100" class="range"><br><br>
+            
+            <label for="3p%"></label>
+            <input type="range" id="threePercent" name="3p%" min="0" max="100" class="range"><br><br>
+
+
+            <input type="submit" id="submit" value="Search Player">
+
+        </form>
+
+        <table>
+            <tr>
+                <th>Player</th>
+                <th>Position</th>
+                <th>Points</th>
+                <th>FG%</th>
+                <th>3P%</th>
+                <th>Action</th>
+
+
+            </tr>
+        </table>
+    </div>
 </body>
 </html>
